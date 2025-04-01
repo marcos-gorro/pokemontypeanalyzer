@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Type Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Type Effectiveness Calculator</h1>
+        <div class="options">
+            <button id="singleTypeBtn">Check Single Type</button>
+            <button id="dualTypeBtn">Check Dual Types</button>
+        </div>
+        
+        <div id="singleTypeSection" class="hidden">
+            <h2>Single Type Analysis</h2>
+            <select id="singleTypeSelect">
+                <option value="">Select a type...</option>
+                <!-- Options will be populated by JavaScript -->
+            </select>
+            <div id="singleTypeResults" class="results"></div>
+        </div>
+        
+        <div id="dualTypeSection" class="hidden">
+            <h2>Dual Type Analysis</h2>
+            <div class="type-selectors">
+                <select id="firstTypeSelect">
+                    <option value="">Select first type...</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+                <select id="secondTypeSelect">
+                    <option value="">Select second type...</option>
+                    <!-- Options will be populated by JavaScript -->
+                </select>
+            </div>
+            <div id="dualTypeResults" class="results"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
