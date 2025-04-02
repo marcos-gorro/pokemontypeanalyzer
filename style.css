@@ -171,29 +171,34 @@ select {
     gap: 8px;
 }
 
+/* Type badges with icons */
 .type-badge {
-    padding: 5px 10px;
+    padding: 5px 10px 5px 30px; /* Extra left padding for icon */
     border-radius: 15px;
     font-size: 14px;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 8px;
     box-shadow: 0 2px 3px var(--shadow-color);
 }
 
-/* Type icons - add to existing type classes */
+/* Icon positioning - absolute position inside badge */
 .type-badge::before {
     content: "";
-    display: inline-block;
-    width: 16px;
-    height: 16px;
+    display: block;
+    width: 20px;
+    height: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: absolute;
+    left: 5px;
 }
 
-/* Individual type icons */
+/* Individual type icons - adjust paths to match your structure */
 .type-normal::before { background-image: url('assets/icons/normal.svg'); }
 .type-fire::before { background-image: url('assets/icons/fire.svg'); }
 .type-water::before { background-image: url('assets/icons/water.svg'); }
@@ -212,6 +217,7 @@ select {
 .type-dark::before { background-image: url('assets/icons/dark.svg'); }
 .type-steel::before { background-image: url('assets/icons/steel.svg'); }
 .type-fairy::before { background-image: url('assets/icons/fairy.svg'); }
+
 
 .share-section {
     margin-top: 20px;
