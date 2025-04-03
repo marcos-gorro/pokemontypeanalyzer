@@ -8,7 +8,7 @@ const typeChart = {
     Ice: { Fire: 2, Ice: 0.5, Fighting: 2, Rock: 2, Steel: 2 },
     Fighting: { Flying: 2, Psychic: 2, Fairy: 2, Rock: 0.5, Bug: 0.5, Dark: 0.5 },
     Poison: { Ground: 2, Psychic: 2, Grass: 0.5, Fighting: 0.5, Poison: 0.5, Bug: 0.5, Fairy: 0.5 },
-    Ground: { Water: 2, Grass: 2, Ice: 2, Flying: 1, Poison: 0.5, Rock: 0.5 },
+    Ground: { Water: 2, Grass: 2, Ice: 2, Poison: 0.5, Rock: 0.5 },
     Flying: { Electric: 2, Ice: 2, Rock: 2, Grass: 0.5, Fighting: 0.5, Bug: 0.5, Ground: 0 },
     Psychic: { Bug: 2, Dark: 2, Ghost: 2, Fighting: 0.5, Psychic: 0.5 },
     Bug: { Fire: 2, Flying: 2, Rock: 2, Grass: 0.5, Fighting: 0.5, Ground: 0.5 },
