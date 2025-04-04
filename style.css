@@ -106,6 +106,30 @@ button.active {
     background-color: var(--primary-color);
 }
 
+.pokemon-btn {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+.pokemon-btn button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+  
+.pokemon-btn button:hover {
+    background-color: #c0392b;
+}
+  
+.pokemon-btn.hidden {
+    display: none;
+}
+
 .hidden {
     display: none;
 }
